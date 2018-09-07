@@ -25,7 +25,6 @@ for i in range(-10,-100,-30):
 a = ['Mary', 'had', 'a', 'little', 'lamb']
 for i in range(len(a)):
     print(i,a[i])
-
 print(range(10))
 print(list(range(10)))
 for i in list(range(10)):
