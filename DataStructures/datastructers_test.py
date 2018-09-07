@@ -113,10 +113,13 @@ print({x:x**2 for x in  (2,4,6) })
 dict_test=dict(sape=4139, guido=4127, jack=4098)
 print(dict_test)
 
-
-
 for i ,v in enumerate(['whgloveu','www','ddd','eedsf','dsdf',]):
     print(i,v)
 
+from math import pi
+print([str(round(pi,i)) for i in range(1,6)])
 
+matrix=[[1, 2, 3, 4], [5, 6, 7, 8],[9, 10, 11, 12]]
 
+b=[ [ row[i] for row in matrix ] for i in range(4)]
+print(b)
