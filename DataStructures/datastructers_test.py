@@ -104,6 +104,7 @@ print(a)
 tel={ 'jack':4098 }
 tel['years'] =1980
 tel['sape'] =4139
+print('look----------------------')
 print(tel)
 del tel['sape']
 print(tel)
@@ -123,3 +124,61 @@ matrix=[[1, 2, 3, 4], [5, 6, 7, 8],[9, 10, 11, 12]]
 
 b=[ [ row[i] for row in matrix ] for i in range(4)]
 print(b)
+print(list(zip(*b)))
+a = [-1, 1, 66.25, 333, 333, 1234.5]
+del a[0]
+del a[len(a)-1]
+a.pop(1)
+del(a[:])
+print(a)
+# tuple 是元组
+t = 12345, 54321, 'hello!'
+print(t)
+print(t[0])
+u = t, (1, 2, 3, 4, 5)
+print(u)
+
+v = ([1, 2, 3], [3, 2, 1])
+empty = ()
+singleton = 'hello',
+print(len(empty))
+print(len(singleton))
+print(len(*singleton))
+t = 12345, 54321, 'hello!'
+x, y, z = t
+print(x)
+print(y)
+print(z)
+# 5.4. Sets
+basket = {'apple', 'orange', 'apple', 'pear', 'orange', 'banana'}
+print(basket)
+j='apple' in basket
+print(j)
+a = set('abracadabra')
+b = set('alacazam')
+print(a)
+print(b)
+print(a-b)
+print(b-a)
+print(b|a)
+print(b&a)
+print(a^b)
+a = {x for x in 'abracadabra' if x not in 'abc'}
+print(a)
+questions=['name', 'quest', 'favorite color']
+answers = ['lancelot', 'the holy grail', 'blue']
+for q,a in zip(questions,answers):
+    print('what is your {0} ? it is {1} '.format(q,a))
+
+    for i in reversed(range(1,10,2)):
+        print(i)
+        basket = ['apple', 'orange', 'apple', 'pear', 'orange', 'banana']
+
+print(sorted(set(basket)))
+a=3
+b=5
+c=5
+print(a < b == c)
+string1, string2, string3 = '', 'Trondheim', 'Hammer Dance'
+non_null = string1 or string2 or string3
+print(non_null)
